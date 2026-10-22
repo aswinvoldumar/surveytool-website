@@ -8,7 +8,6 @@ import { SignupProvider } from './components/SignupDialog.tsx'
 import { SmoothScroll } from './components/SmoothScroll.tsx'
 import { HowItWorks } from './components/HowItWorks.tsx'
 import { Showcase } from './components/Showcase.tsx'
-import { SocialProof } from './components/SocialProof.tsx'
 
 export default function App() {
   return (
@@ -26,7 +25,6 @@ export default function App() {
         <Features />
         <Showcase />
         <HowItWorks />
-        <SocialProof />
         <FinalCta />
       </main>
       <Marquee />
