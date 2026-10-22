@@ -12,7 +12,7 @@ export function FinalCta() {
       />
       <p
         aria-hidden="true"
-        className="pointer-events-none absolute top-[18%] right-[-2%] hidden text-[clamp(6rem,13vw,11rem)] leading-none font-semibold tracking-[-0.07em] text-white select-none lg:block"
+        className="pointer-events-none absolute top-[18%] right-0 mr-[clamp(1.5rem,4vw,4rem)] hidden text-[clamp(6rem,13vw,11rem)] leading-none font-semibold tracking-[-0.07em] text-white select-none lg:block"
       >
         ASK
       </p>

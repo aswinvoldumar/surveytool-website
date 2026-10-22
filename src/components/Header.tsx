@@ -5,8 +5,8 @@ import { useOpenSignup } from './SignupDialog.tsx'
 const links = [
   { id: 'top', label: 'Home', href: '#top' },
   { id: 'features', label: 'Features', href: '#features' },
-  { id: 'solutions', label: 'Solutions', href: '#solutions' },
-  { id: 'resources', label: 'Resources', href: '#resources' },
+  { id: 'insights', label: 'Insights', href: '#insights' },
+  { id: 'how-it-works', label: 'How it works', href: '#how-it-works' },
 ] as const
 
 export function Header() {

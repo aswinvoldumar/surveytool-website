@@ -6,25 +6,21 @@ const columns = [
     title: 'Product',
     links: [
       { label: 'Features', href: '#features' },
-      { label: 'Solutions', href: '#solutions' },
+      { label: 'Insights', href: '#insights' },
       { label: 'How it works', href: '#how-it-works' },
     ],
   },
   {
-    title: 'Resources',
+    title: 'How it works',
     links: [
-      { label: 'Question design', href: '#features' },
-      { label: 'Reading results', href: '#solutions' },
-      { label: 'Three steps', href: '#how-it-works' },
+      { label: 'Create your survey', href: '#create' },
+      { label: 'Share it with your audience', href: '#share' },
+      { label: 'Turn responses into insights', href: '#decide' },
     ],
   },
   {
     title: 'Company',
-    links: [
-      { label: 'Get started', href: '#get-started' },
-      { label: 'Privacy Policy', href: '#privacy' },
-      { label: 'Terms of Service', href: '#terms' },
-    ],
+    links: [{ label: 'Get started', href: '#get-started' }],
   },
 ]
 
@@ -32,7 +28,7 @@ export function Footer() {
   const openSignup = useOpenSignup()
 
   return (
-    <footer id="resources" className="border-t border-line bg-canvas">
+    <footer id="footer" className="border-t border-line bg-canvas">
       <div className="shell grid gap-12 py-16 md:grid-cols-[minmax(0,1.4fr)_repeat(3,minmax(0,1fr))]">
         <div>
           <Logo />
@@ -66,31 +62,8 @@ export function Footer() {
         ))}
       </div>
 
-      <div className="shell grid gap-8 border-t border-line py-10 md:grid-cols-2">
-        <section id="privacy">
-          <h2 className="text-sm font-medium">Privacy Policy</h2>
-          <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted">
-            Name, email, and phone entered in Get started are sent to support@bizintellis.com through FormSubmit so the team can follow up. Survey responses are not collected here.
-          </p>
-        </section>
-        <section id="terms">
-          <h2 className="text-sm font-medium">Terms of Service</h2>
-          <p className="mt-3 max-w-prose text-sm leading-relaxed text-muted">
-            Survey Studio is a design preview. The figures on this page are sample marketing numbers, not live product totals. Use of the page does not create an account or a paid plan.
-          </p>
-        </section>
-      </div>
-
-      <div className="shell flex flex-col gap-3 border-t border-line py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+      <div className="shell border-t border-line py-6 text-sm text-muted">
         <p>© 2026 Survey Studio</p>
-        <div className="flex gap-5">
-          <a href="#privacy" className="hover:text-ink">
-            Privacy Policy
-          </a>
-          <a href="#terms" className="hover:text-ink">
-            Terms of Service
-          </a>
-        </div>
       </div>
     </footer>
   )

@@ -1,15 +1,18 @@
 const steps = [
   {
+    id: 'create',
     number: '01',
     title: 'Create your survey.',
     body: 'Choose a question type, write in plain language, and preview what people will see.',
   },
   {
+    id: 'share',
     number: '02',
     title: 'Share it with your audience.',
     body: 'Send a link and follow responses as they come in.',
   },
   {
+    id: 'decide',
     number: '03',
     title: 'Turn responses into insights.',
     body: 'Read the pattern, then decide what to do next.',
@@ -27,7 +30,7 @@ export function HowItWorks() {
             className="absolute top-7 right-0 left-0 hidden h-px bg-gradient-to-r from-glow via-tide to-mint md:block"
           />
           {steps.map((step) => (
-            <li key={step.number} className="relative">
+            <li key={step.number} id={step.id} className="relative">
               <p className="relative z-10 w-fit bg-canvas pr-4 text-[clamp(2.75rem,4vw,4rem)] leading-none font-semibold tracking-[-0.05em]">
                 {step.number}
               </p>

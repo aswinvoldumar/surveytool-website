@@ -8,7 +8,7 @@ const activity = [
 
 export function Showcase() {
   return (
-    <section id="solutions" className="bg-canvas pb-24 lg:pb-32">
+    <section id="insights" className="bg-canvas pb-24 lg:pb-32">
       <div className="shell">
         <div className="grid items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)]">
           <h2 className="reveal text-[clamp(2.2rem,4vw,3.5rem)] leading-[1.02] font-semibold tracking-[-0.045em]">
